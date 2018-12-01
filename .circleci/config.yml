@@ -38,7 +38,7 @@ jobs:
             - dist
   deploy:
     docker:
-      - image: circleci/chakracore-8.11-browsers
+      - image: circleci/node:chakracore-8.11-browsers
     working_directory: ~/frontend
     steps:
       - restore_cache:
